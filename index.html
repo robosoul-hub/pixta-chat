@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>PIXTA Chat</title>
+<meta charset="UTF-8">
+<title>PIXTA Chat</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  background: #e5ddd5;
+}
+
+.header {
+  background: #06c755;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chat {
+  padding: 15px;
+}
+
+.bubble {
+  background: white;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  max-width: 80%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.system {
+  background: #fff3cd;
+  font-size: 13px;
+}
+
+.input-area {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #f0f0f0;
+  padding: 8px;
+  display: flex;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.input-area button {
+  background: #06c755;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0 16px;
+  margin-left: 8px;
+}
+</style>
 </head>
+
 <body>
-  <h1>PIXTA 情報共有チャット</h1>
-  <p>準備中</p>
+
+<div class="header">PIXTA 情報共有チャット</div>
+
+<div class="chat">
+  <div class="bubble system">
+    このチャットはPIXTAの情報共有用です。<br>
+    参加者限定で運用しています。
+  </div>
+
+  <div class="bubble">
+    まずは自己紹介どうぞ！
+  </div>
+</div>
+
+<div class="input-area">
+  <input type="text" placeholder="メッセージを入力（準備中）">
+  <button>送信</button>
+</div>
+
 </body>
 </html>
